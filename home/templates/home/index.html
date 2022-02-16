@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+<!-- Header -->
+{% block page_header %}
+<div class="container header-container">
+   <div class="row">
+      <div class="col"></div>
+   </div>
+</div>
+{% endblock %}
+<!-- Homepage image upon which first letters of adjectives ares coloured to spell out site name -->
+{% block content %}
+<div id="hello" class="container h-100">
+   <div class="row h-100">
+      <div class="col-7 col-md-6  my-auto">
+         <h1 class="display-4 logo-font text-black">
+           <p>QuickThrift</p>
+
+         </h1>
+         <div class="my-5 ">
+            <h4>
+               <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3 ">View Collection</a>
+            </h4>
+         </div>
+      </div>
+   </div>
+</div>
+<footer>
+   <!-- Social media handles in footer -->
+   <div class="s-m">
+      <a href="https://www.facebook.com/marketplace/profile/100005762701075/?ref=share_attachment" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/chuzy22/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="tel:<?= esc_url($5192122990) ?>" target="_blank"><i class="fa fa-phone"></i></a>
+</footer>
+</div>
+{% endblock %}
