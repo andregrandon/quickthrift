@@ -26,9 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY',)
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # DEBUG = bool( os.environ.get('DEBUG', False) )
-DEBUG = bool( os.environ.get('DEBUG', False) )
+DEBUG= bool( os.environ.get('DEBUG', False) )
 
-ALLOWED_HOSTS = ['quickthrift-andregrandon.herokuapp.com', '198.211.99.20', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['m-i-o.herokuapp.com', '198.211.99.20', 'localhost', '127.0.0.1']
 
 
 
@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'allauth.account',
+    'allauth',
+        'allauth.account',
+        'allauth.socialaccount',
     'home',
     'products',
 
@@ -134,7 +136,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT =os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

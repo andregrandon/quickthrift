@@ -6,6 +6,7 @@ html {
 body {
     background: url('/media/dre.jpg') no-repeat center center fixed;
     background-size: cover;
+
     height: calc(100vh - 140px);
     color: #555;
     font-family: 'Lato';

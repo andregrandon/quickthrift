@@ -1,1 +1,1 @@
-web: gunicorn mio.wsgi:application
+web: gunicorn mio.wsgi --log-file -
