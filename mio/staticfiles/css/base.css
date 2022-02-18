@@ -4,7 +4,7 @@ html {
 
 
 body {
-    background: url('/media/dre.jpg') no-repeat center center fixed;
+    background: url('/static/media/dre.jpg') no-repeat center center fixed;
     background-size: cover;
 
     height: calc(100vh - 140px);
