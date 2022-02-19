@@ -21,8 +21,8 @@ from mio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+
     path('', include('home.urls')),
     path('about',views.AboutPage.as_view(),name='about'),
     path('products/', include('products.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]

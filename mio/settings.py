@@ -26,8 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY',)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = bool( os.environ.get('DEBUG', False) )
-
+# DEBUG = bool( os.environ.get('DEBUG', False) )
+DEBUG=True
 ALLOWED_HOSTS = ['quickthrift-andregrandon.herokuapp.com', '198.211.99.20', 'localhost', '127.0.0.1']
 
 
